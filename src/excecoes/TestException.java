@@ -17,6 +17,9 @@ public class TestException {
 		System.out.println("Inicio do metodo2");
 		int array[];
 		array = new int [10];
+		//Lançamento de Excessão sem Tratamento
+		//para ver mensagem que aparece no console
+		//Array index out of bounds exception
 		for (int i = 0; i < 20; i++) {
 			array[i]=i;
 			System.out.println(i);
