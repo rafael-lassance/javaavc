@@ -4,7 +4,7 @@ public class TestaMath3 {
 
 	public static void main(String[] args) {
 		
-
+ 
 		//Para casa: depois subir para o GitHub
 		//Implementar classes de teste para os seguintes metodos de Math
 		//usar e depois com o comentario explicar o que faz:
