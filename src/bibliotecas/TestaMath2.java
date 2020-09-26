@@ -3,7 +3,7 @@ package bibliotecas;
 public class TestaMath2 {
 
 	public static void main(String[] args) {
-		
+		 
 
 		//Para casa: depois subir para o GitHub
 		//Implementar classes de teste para os seguintes metodos de Math
