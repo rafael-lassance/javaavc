@@ -1,6 +1,6 @@
 package excecoes;
 
-public class TestException {
+public class TestExceptionDepois {
 	public static void main(String[] args) {
 		System.out.println("Inicio do metodo main");
 		metodo1();
@@ -17,13 +17,19 @@ public class TestException {
 		System.out.println("Inicio do metodo2");
 		int array[];
 		array = new int [10];
-		//Lançamento de Excessão sem Tratamento
-		//para ver mensagem que aparece no console
-		//Array index out of bounds exception
-		for (int i = 0; i < 20; i++) {
-			array[i]=i;
-			System.out.println(i);
+		
+		
+		try {
+			for (int i = 0; i < 20; i++) {
+				array[i]=i;
+				System.out.println(i);
+			}
 		}
+		catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("excecao pega (catched): " + e);
+		}
+		
+		
 		System.out.println("Fim do metodo2");
 		
 	}
