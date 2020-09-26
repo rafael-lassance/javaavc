@@ -11,7 +11,7 @@ public class TestaMath3 {
 		//random(), max, min, ceil, floor, exp, log, pow,
 		// sqrt, sin, toDegrees, toRadians
 		
-		
+		 
 		/*******************
 		 * PI (Campo)
 		 * valor double que é mais próximo de Pi
