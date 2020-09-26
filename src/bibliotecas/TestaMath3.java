@@ -25,16 +25,16 @@ public class TestaMath3 {
 		 * Sin:
 		 * retorna o seno trigonométrico de um ângulo em radianos.
 		 ****************/
-		double d14 = Math.sin(dPi);
-		System.out.println("Sin("+dPi+"): " + d14);
+		double dsinPi = Math.sin(dPi);
+		System.out.println("Sin("+dPi+"): " + dsinPi);
 		
 		/****************
 		 * ToDegrees:
 		 * Converte um ângulo medido em radianos a um ângulo
 		 * equivalente aproximado medido em graus.
 		 ****************/
-		double d15 = Math.toDegrees(dPi);
-		System.out.println("ToDegrees("+dPi+"): " + d15);
+		double dPiGraus = Math.toDegrees(dPi);
+		System.out.println("ToDegrees("+dPi+"): " + dPiGraus);
 		
 		
 		/****************
@@ -42,8 +42,8 @@ public class TestaMath3 {
 		 * Converte um ângulo medido em graus a um ângulo
 		 * equivalente aproximado medido em radianos.
 		 ****************/
-		double d16 = Math.toRadians(d15);
-		System.out.println("ToRadians("+d15+"): " + d16);
+		double dPiRadianos = Math.toRadians(dPiGraus);
+		System.out.println("ToRadians("+dPiGraus+"): " + dPiRadianos);
 		
 		
 

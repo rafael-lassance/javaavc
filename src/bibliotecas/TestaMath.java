@@ -27,22 +27,22 @@ public class TestaMath {
 		 * retorna um double com sinal positivo,
 		 * maior ou igual a 0 e menor do que 1.
 		 **************/
-		double d4 = Math.random(); 
-		System.out.println("Random: " + d4);
+		double dRandom = Math.random(); 
+		System.out.println("Random: " + dRandom);
 		
 		/****************
 		 * Max:
 		 * retorna o maior entre dois valores double
 		 ****************/
-		double d5 = Math.max(d1, d2);
-		System.out.println("Max("+d1+","+d2+ "): " + d5);
+		double dMax = Math.max(d1, d2);
+		System.out.println("Max("+d1+","+d2+ "): " + dMax);
 		
 		/****************
 		 * Min:
 		 * retorna o menor entre dois valores double
 		 ****************/
-		double d6 = Math.min(d1, d2);
-		System.out.println("Min("+d1+","+d2+ "): " + d6);
+		double dMin = Math.min(d1, d2);
+		System.out.println("Min("+d1+","+d2+ "): " + dMin);
 		
 		
 		/****************
@@ -50,16 +50,16 @@ public class TestaMath {
 		 * retorna o menor valor double que é maior ou igual ao argumento
 		 * e que é igual a um inteiro matemático.
 		 ****************/
-		double d8 = Math.ceil(d1);
-		System.out.println("Ceil("+d1+"): " + d8);
+		double dCeil = Math.ceil(d1);
+		System.out.println("Ceil("+d1+"): " + dCeil);
 		
 		/****************
 		 * Floor:
 		 * retorna o maior valor double que é menor ou igual ao argumento
 		 * e que é igual a um inteiro matemático.
 		 ****************/
-		double d9 = Math.floor(d1);
-		System.out.println("Floor("+d1+"): " + d9);
+		double dFloor = Math.floor(d1);
+		System.out.println("Floor("+d1+"): " + dFloor);
 		
 		
 		

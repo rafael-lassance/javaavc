@@ -18,15 +18,15 @@ public class TestaMath2 {
 		 * retorna o numero de Euler 'e' elevado a um valor double.
 		 ****************/
 		double d1 = 1.0;
-		double d10 = Math.exp(d1);
-		System.out.println("Exp("+d1+"): " + d10);
+		double dExp = Math.exp(d1);
+		System.out.println("Exp("+d1+"): " + dExp);
 		
 		/****************
 		 * Log:
 		 * retorna o logaritmo natural (base 'e') de um valor double.
 		 ****************/
-		double d11 = Math.log(d1);
-		System.out.println("Log("+d1+"): " + d11);
+		double dLog = Math.log(d1);
+		System.out.println("Log("+d1+"): " + dLog);
 		
 		/****************
 		 * Pow:
@@ -34,15 +34,15 @@ public class TestaMath2 {
 		 ****************/
 		double d2 = 2.0;
 		double d3 = 3.0;
-		double d12 = Math.pow(d2,d3);
-		System.out.println("Pow("+d2+","+d3+"): " + d12);
+		double dPow = Math.pow(d2,d3);
+		System.out.println("Pow("+d2+","+d3+"): " + dPow);
 		
 		/****************
 		 * Sqrt:
 		 * retorna o arrendodamento correto da raiz quadrada positiva de um valor double.
 		 ****************/
-		double d13 = Math.sqrt(d2);
-		System.out.println("Sqrt("+d2+"): " + d13);
+		double dSqrt = Math.sqrt(d2);
+		System.out.println("Sqrt("+d2+"): " + dSqrt);
 		
 		
 				
