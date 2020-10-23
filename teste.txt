@@ -1,0 +1,4 @@
+123 testando...
+a
+leitura
+de arquivos
