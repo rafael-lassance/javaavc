@@ -6,7 +6,42 @@ public class Conta {
 	double saldo;
 	double limite;
 	
-	boolean sacar(double valor) {
+	
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	
+	
+	public boolean sacar(double valor) {
 		//double saldoAlterado = saldo - valor;
 		//saldo = saldoAlterado;
 		//OUTRO OPCAO1
@@ -22,7 +57,7 @@ public class Conta {
 		return false;
 	}
 	
-	void depositar(double valor) {
+	public void depositar(double valor) {
 		this.saldo += valor;
 	}
 }
