@@ -2,6 +2,8 @@ package javachat;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -15,10 +17,15 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class Cliente2 extends JFrame {
+public class Cliente2 extends JFrame implements KeyListener{
 
 	private JPanel contentPane;
 	JTextArea textArea;
+	
+	static Socket client;
+	static PrintStream out;
+	
+	static Cliente2 frame; 
 
 	/**
 	 * Launch the application.
@@ -31,7 +38,7 @@ public class Cliente2 extends JFrame {
 				 * Inicia Socket
 				 *******************************/
 		
-				Socket client = new Socket("127.0.0.1", 10000);
+				client = new Socket("127.0.0.1", 10000);
 				
 				System.out.println("Cliente conectado ao servidor!");
 				
@@ -44,51 +51,13 @@ public class Cliente2 extends JFrame {
 							 * Inicia frame 
 							 *******************************/
 							
-							Cliente2 frame = new Cliente2();
+							frame = new Cliente2();
 							frame.setVisible(true);
-				
-							Scanner s;
-							PrintStream out = new PrintStream(client.getOutputStream());
+							frame.textArea.addKeyListener(frame);
+											
+							out = new PrintStream(client.getOutputStream());
 							
-				
-							/*******************************
-							 * Lê o texto da TextArea 
-							 *******************************/
-							
-							/*
-							s = new Scanner(new InputStream() {
-								
-								@Override
-								public int read() throws IOException {
-									// TODO Auto-generated method stub
-									frame.textArea.getText();
-									return 0;
-								}
-							});
-							
-							*/
-							
-							s = new Scanner(frame.textArea.getText());
-								
-							
-							while(s.hasNextLine()) {
-								out.println(s.nextLine());
-							}
-							
-							
-							
-						//	PrintStream out = new PrintStream(client.getOutputStream());
 						
-							
-						//  out.println(frame.textArea.getText());
-							
-							
-							out.close();
-							s.close();
-							client.close();
-
-							
-					
 					
 						}
 						  catch (Exception e) {
@@ -122,6 +91,35 @@ public class Cliente2 extends JFrame {
 		
 		textArea = new JTextArea();
 		contentPane.add(textArea, BorderLayout.CENTER);
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+	
+		out.println(e.getKeyChar());
+		out.close();
+		try {
+			client.close();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	
+	
+		
+	}
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 		
 		
